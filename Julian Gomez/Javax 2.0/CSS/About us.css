@@ -1,0 +1,268 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    /* color */
+
+    --color-background: rgb(207, 150, 60);
+    --color-background2: rgb(47, 47, 47);
+    --color-background3: rgb(35, 35, 35);
+
+
+
+    --color-backgroundBody: rgb(30, 30, 43) ;
+    --color-background_images: rgb(65, 65, 65);
+    
+    --color-h1: #fff;
+    --color-h2: #fff;
+    --color-a: #fff;
+    --color-p: black;
+    --color-Java: rgb(207, 150, 60);
+    --color-X: rgb(207, 150, 60);
+
+
+    /* font size */
+    --font_size-h1: 60px ;
+    --font_size-h2: 25px ;
+    --font_size-p: 18px;
+    --font_size-a: 110% ;
+    --font-size-Java: 150%;
+    --font-size-X: 200%;
+
+    /* margin */
+    --margin-p:  15px;
+
+    /* padding */
+
+    --padding-container: 10px;
+} 
+
+body
+{
+    margin-top: 3%;
+}
+
+/* Navigation */
+
+.Navigation
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: 5px 5%;
+    background-color: var(--color-background);
+}
+
+.Navigation img
+{
+    width: 38px;
+    height: 40px;
+}
+
+.Navigation ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    margin: 0 20px;
+    list-style: none;
+}
+
+.Navigation ul li
+{
+    padding: 0 10%;
+}
+
+.Navigation ul li a
+{
+    color: var(--color-a);
+    font-size: var(--font_size-a);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+.Navigation div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    
+    text-decoration: none;
+    
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.Navigation div a
+{
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+}
+
+#Java
+{
+    color: var(--color-Java);
+    font-size: var(--font-size-Java);
+    letter-spacing: 2px;
+    text-decoration: solid;
+}
+
+#X
+{
+    color: var(--color-X);
+    font-size: var(--font-size-X);
+}
+
+
+/* Services */
+
+#aboutUs
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 3.5% 0;
+
+    background-color: var(--color-background2);
+}
+
+#aboutUs article
+{
+    display: flex;
+    align-items: center;
+}
+
+#aboutUs article p
+{
+    text-align: justify;
+}
+#aboutUs1, #aboutUs2
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 4%;
+    padding: 6%;
+    background-color: var(--color-background3);
+    border-radius: 10px;
+}
+
+.textAboutUs
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.textAboutUs h2
+{
+    padding: 2% 0;
+    color: var(--color-h2);
+    font-size: var(--font_size-h2);
+}
+
+.textAboutUs p
+{
+    font-size: var(--font_size-p);
+    color: var(--color-p);
+    margin: var(--margin-p);
+}
+
+.imgAboutUs
+{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 40vh;
+}
+
+.imgAboutUs img
+{
+    width: 100%;
+}
+
+/* Mission and Vision */
+
+#Mission_and_Vision
+{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+.Background-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50,50,50);
+    opacity: .87;
+    height: 80%;
+}
+
+.Mission, .Vision
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mission
+{
+    background: url(Images/Geometria.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-color: rgb(60,60,60);
+    background-blend-mode: soft-light;
+
+}
+.Vision
+{
+    background: url(Images/Vision.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: rgb(60,60,60);
+    background-blend-mode: soft-light;
+}
+
+.Mission div, .Vision div
+{
+    width: 90%;
+}
+
+.Mission h1, .Vision h1
+{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 2% 0;
+}
+
+.Mission div p, .Vision div p
+{
+    font-size: 20px; 
+    text-align: justify;
+}
+
+
+
