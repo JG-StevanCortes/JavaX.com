@@ -250,8 +250,49 @@ header li a
     border-radius: 10px;
 }
 
+/* our working process */
+
+.workingProcess
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workingProcess article
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
 
 
 
+.workingProcess article div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+}
 
+.workingProcess article div img
+{
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-JX);
+    border-radius: 50%;
+}
+
+.workingProcess article div img, .workingProcess article div h3
+{
+    margin: 5px;
+    padding: 10px;
+}
 
