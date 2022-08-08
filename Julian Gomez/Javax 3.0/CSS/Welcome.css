@@ -10,7 +10,7 @@
  --color-a: #ffff;
  --color-JX: #000000;
 
- --background-a: rgb(207,150, 60);
+ --background-a: rgba(255, 255, 255, 0.63);
 --background-JX: rgb(207, 150, 60);
 
 --size-JX: 22px;
@@ -197,5 +197,61 @@ header li a
 {
     padding: 5px;
 }
+
+/* ous main plans */
+
+.plans
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin: 50px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: var(--background-JX);
+}
+
+.plans div img, .plans div h2, .plans div ol, .plans div h3
+{
+    padding: 5px;
+}
+
+
+.plans div img
+{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-body);
+}
+
+.plans div ol
+{
+    list-style-type: disc;
+}
+
+.plans div li
+{
+    padding: 2.5px;
+}
+
+.plans div h3
+{
+    background-color: var(--background-a);
+    border-radius: 10px;
+}
+
+
+
+
 
 
