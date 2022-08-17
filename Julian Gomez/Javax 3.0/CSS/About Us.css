@@ -1,0 +1,64 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: solid 2px black;
+}
+
+:root
+{
+    --size-h2: 22px;
+    --size-p: 15px;
+}
+
+/* what is */
+
+#whatIs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+
+#whatIs article
+{
+    padding: 20px;
+    width: 50%;
+}
+
+.textWhat h2
+{
+    font-size: var(--size-h2);
+}
+.textWhat p
+{
+    font-size: var(--size-p);
+}
+
+/* valors */
+
+#valors
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+#valors article
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textValors
+{
+    width: 60%;
+}
+
+.listValors
+{
+}
+
