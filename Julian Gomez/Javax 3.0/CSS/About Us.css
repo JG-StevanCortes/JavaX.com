@@ -7,13 +7,14 @@
 
 :root
 {
+    --color-profile: #2f2f2f;
     --size-h2: 22px;
     --size-p: 15px;
 }
 
 body
 {
-    background-color: #2f2f2f;
+    /* background-color: #2f2f2f; */
 }
 
 /* what is */
@@ -68,7 +69,49 @@ body
 
 #workTeam
 {
+    flex-wrap: wrap;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 230px;
+    background-color: var(--color-profile);
+    margin: 10px;
+    
+}
+
+.profile img
+{
+    width: 100%;
+    background-color: rgb(26, 149, 187);
+}
+
+.description
+{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    
+}
+
+.description h2, .description p, .description i
+{
+    text-align: justify;
+    padding: 8px;
+}
+
+.socialNetworks i
+{
+    font-size: 18px;
+    color: black;
+}
