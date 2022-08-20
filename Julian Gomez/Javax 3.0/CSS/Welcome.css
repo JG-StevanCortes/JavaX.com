@@ -6,23 +6,60 @@
 
 :root
 {
- --color-body: #2f2f2f;
- --color-a: #ffff;
- --color-JX: #000000;
 
- --background-a: rgba(255, 255, 255, 0.63);
+/* background */
+
 --background-JX: rgb(207, 150, 60);
+--background-a: rgba(255, 255, 255, 0.836);
+--background-footer: rgba(55, 55, 55, 0.829);
 
---size-JX: 22px;
---size-a: 18px;
---size-welcome: 80px;
+/* font size */
+
+--size-h1: 60px;
+--size-h2: 28px;
+--size-h3: 22px;
+--size-p: 18px;
+--size-a: 20px;
+
+/* color */
+
+--color-JX: #000000;
+--color-h1:;
+--color-h2:;
+--color-h3:;
+--color-p: ;
+--color-a: ;
 }
 
-body
-{
-    background-color: var(--color-body);
+/* body */
 
+body h1 
+{ 
+    font-size: var(--size-h1);
+    color: var(--color-h1);
 }
+body h2
+{ 
+    font-size: var(--size-h2);
+    color: var(--color-h2);
+}
+body h3
+{ 
+    font-size: var(--size-h3);
+    color: var(--color-h3);
+}
+body p
+{ 
+    font-size: var(--size-p);
+    color: var(--color-p);
+}
+body a
+{ 
+    font-size: var(--size-a);
+    color: var(--color-a);
+    font-weight: bold;
+}
+
 
 /* navigation */
 

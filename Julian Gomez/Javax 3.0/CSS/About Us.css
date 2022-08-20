@@ -7,15 +7,62 @@
 
 :root
 {
-    --color-profile: #2f2f2f;
-    --size-h2: 22px;
-    --size-p: 15px;
+    --color-profile: rgb(207, 150, 60);
+    --color-icon: #fff;
+
+    /* background */
+
+    --background-JX: rgb(207, 150, 60);
+    --background-a: rgba(255, 255, 255, 0.836);
+    --background-footer: rgba(55, 55, 55, 0.829);
+    
+    /* font size */
+    
+   --size-h1: 60px;
+   --size-h2: 28px;
+    --size-h3: 22px;
+    --size-p: 18px;
+    --size-a: 20px;
+    
+    /* color */
+    
+    --color-JX: #000000;
+    --color-h1:;
+    --color-h2:;
+    --color-h3:;
+    --color-p: ;
+    --color-a: ;
 }
 
-body
-{
-    /* background-color: #2f2f2f; */
+/* body */
+
+body h1 
+{ 
+    font-size: var(--size-h1);
+    color: var(--color-h1);
 }
+body h2
+{ 
+    font-size: var(--size-h2);
+    color: var(--color-h2);
+}
+body h3
+{ 
+    font-size: var(--size-h3);
+    color: var(--color-h3);
+}
+body p
+{ 
+    font-size: var(--size-p);
+    color: var(--color-p);
+}
+body a
+{ 
+    font-size: var(--size-a);
+    color: var(--color-a);
+    font-weight: bold;
+}
+    
 
 /* what is */
 
@@ -64,14 +111,12 @@ body
     width: 60%;
 }
 
-
 /* work team */
 
 #workTeam
 {
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 20px;
 }
@@ -82,16 +127,19 @@ body
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    width: 230px;
+    width: 300px;
     background-color: var(--color-profile);
-    margin: 10px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    padding-bottom: 20px;
     
 }
 
 .profile img
 {
     width: 100%;
-    background-color: rgb(26, 149, 187);
+    height: 250px;
 }
 
 .description
@@ -110,8 +158,174 @@ body
     padding: 8px;
 }
 
+.socialNetworks
+{
+    position: absolute;
+    margin: 5px;
+    bottom: 0;
+}
+
 .socialNetworks i
 {
     font-size: 18px;
-    color: black;
+    color: var(--color-icon);
+    justify-content: baseline;
+    align-items: baseline;
 }
+
+
+/* balance sheets */
+
+#balance
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#balance span
+{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#balance h1, #balance span
+{
+    padding: 10px;
+}
+
+#balance span article
+{
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    width: 40%;
+    background-color: var(--color-profile);
+    border-radius: 20px;
+}
+
+#balance span article h2, #balance span article p, #balance span article a
+{
+    margin: 15px;
+    text-align: justify;
+}
+
+#balance span article div
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+#balance span article a
+{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+
+    width: 35%;
+    text-decoration: none;
+    background-color: var(--background-a);
+    color: var(--color-a);
+    border-radius: 20px;
+}
+
+#balance span article a h3, #balance span article a i
+{
+    padding: 5px;
+}
+
+/* footer */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--background-footer);
+}
+
+.logos
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 50%;
+}
+
+.logos img
+{
+    width: 60px;
+}
+
+footer nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.JavaX
+{
+    padding: 0 30px;
+    background-color: var(--background-JX);
+    border-radius: 15%;
+}
+
+.JavaX a
+{
+    color: var(--color-JX);   
+    text-decoration: none; 
+    font-size: var(--size-JX);
+
+}
+
+footer nav ul
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav ul li
+{
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+}
+
+footer nav ul li a
+{
+    text-decoration: none;
+}
+
+footer span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span a
+{
+    padding: 10px;
+    margin: 5px;
+}
+
+footer span a i
+{
+    color: var(--color-icon);
+}
+
