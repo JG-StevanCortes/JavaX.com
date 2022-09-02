@@ -35,6 +35,8 @@
 
 /* header */
 
+/* down */
+
 header.down
 {
     background-color: var(--background-header);
@@ -43,10 +45,11 @@ header.down
     z-index: 10;
 }
 
-header.down ul li a
+header.down a
 {
     color: black;
 }
+
 
 header
 {
@@ -62,9 +65,9 @@ header
     left: 0;
 
     padding: 15px 20px;
+    font-family: Helvetica, sans-serif;
 }
 
-/* down */
 
 
 
@@ -88,7 +91,7 @@ header ul li a
     
     padding: 10px 20px;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     
 }
 
