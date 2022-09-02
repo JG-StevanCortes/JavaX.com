@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root
+{
+
+    /* header */
+    --color-aHeader: #000;
+    --color-JX: black;
+
+    --size-aHeader: 20px;
+    --size-JX: 40px;
+
+
+}
+
+
+/* header */
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    transition: 0.7s;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: 15px 20px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 0 5px;
+
+}
+
+header ul li a
+{
+    color: var(--color-aHeader);
+    font-size: var(--size-aHeader);
+    
+    padding: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+}
+
+.JX a
+{
+    font-size: var(--size-JX);
+    color: var(--color-JX);
+
+    text-decoration: none;
+
+}
