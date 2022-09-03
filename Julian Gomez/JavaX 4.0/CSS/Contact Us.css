@@ -1,0 +1,185 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root
+{
+
+    /* header */
+    --color-aHeader: white;
+    --color-JX: white;
+
+    --size-aHeader: 20px;
+    --size-JX: 40px;
+
+    --background-header: white;
+
+
+    /* main */
+    --size-h1Main: 65px;
+    --size-pMain: 30px;
+
+/* background */
+
+--background-JX: rgb(207, 150, 60);
+--background-a: rgba(255, 255, 255, 0.836);
+--background-footer: rgb(23,25,24);
+
+/* footer */
+
+--color-icon: white;
+--color-copy: gray;
+--color-aFooter: white;
+
+
+/* font size */
+
+--size-h1: 60px;
+--size-h2: 30px;
+--size-h3: 22px;
+--size-p: 22px;
+--size-a: 20px;
+
+}
+
+/* header */
+
+/* down */
+
+header.down
+{
+    background-color: var(--background-header);
+
+    padding: 5px 10px;
+    z-index: 10;
+
+    border-bottom: solid black 2px;
+}
+
+header.down a
+{
+    color: black;
+}
+
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    transition: 0.7s;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: 15px 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+header ul li a
+{
+    color: var(--color-aHeader);
+    font-size: var(--size-aHeader);
+    
+    padding: 10px 0px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+}
+
+.JX a
+{
+    font-size: var(--size-JX);
+    color: var(--color-JX);
+
+    text-decoration: none;
+
+}
+
+
+/* background */
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url(Images/Contact\ Us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: rgba(10, 10, 10, 0.562);
+
+}
+
+main article
+{
+    width: 70%;
+}
+
+main article h1, main article p
+{
+    text-align: center;
+    color: white;
+}
+
+main article h1
+{
+    font-size: var(--size-h1Main);
+}
+main article p
+{
+    font-size: var(--size-pMain);
+}
+
+/* Contact Us */
+
+#contactUs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#contactUs form
+{
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+}
+
+#contactUs form div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactUs form div label, #contactUs form div input, #contactUs form div h3, #contactUs form div textarea
+{
+    padding: 10px;
+}
+
