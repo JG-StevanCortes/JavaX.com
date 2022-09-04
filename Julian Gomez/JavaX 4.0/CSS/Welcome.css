@@ -35,6 +35,7 @@
 --color-aFooter: white;
 
 
+
 /* font size */
 
 --size-h1: 60px;
@@ -274,6 +275,7 @@ footer nav ul li
 footer nav ul li a
 {
     text-decoration: none;
+    font-size: var(--size-aHeader);
     color: var(--color-aFooter);
     letter-spacing: 1px;
 }

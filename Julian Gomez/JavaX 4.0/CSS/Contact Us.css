@@ -160,26 +160,210 @@ main article p
 #contactUs
 {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.socialNetWork
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socialNetWork a
+{
+    padding: 10px;
+    margin: 5px;
+}
+
+.socialNetWork a i
+{
+    color: black;
+    padding: 0 5px;
+}
+
+#contactUs div
+{
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-}
-
-#contactUs form
-{
-    padding: 20px;
     margin: 10px;
-    width: 50%;
 }
 
-#contactUs form div
+#contactUs div h3, #contactUs div a
+{
+    padding: 2px 15px;
+}
+
+#contactUs div a
+{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid black 2px;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+
+}
+
+#contactUs div i
+{
+    padding: 0 8px 0px 15px;
+}
+
+
+/* quote */
+
+#quote
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#quote form
+{
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+}
+
+#quote form div
 {
     display: flex;
     flex-direction: column;
 }
 
-#contactUs form div label, #contactUs form div input, #contactUs form div h3, #contactUs form div textarea
+#quote form div label, #quote form div input, #quote form div h3, #quote form div textarea
 {
     padding: 10px;
+}
+
+#quote iframe
+{
+    width: 45%;
+    margin: 10px;
+}
+
+/* footer */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--background-footer);
+}
+
+.logos
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 50%;
+}
+
+.logos img
+{
+    width: 60px;
+}
+
+footer nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.JavaX
+{
+    padding: 0 30px;
+    background-color: var(--background-JX);
+    border-radius: 15%;
+}
+
+.JavaX a
+{
+    color: var(--color-JX);   
+    text-decoration: none; 
+    font-size: var(--size-JX);
+
+}
+
+footer nav ul
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav ul li
+{
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+}
+
+footer nav ul li a
+{
+    text-decoration: none;
+    font-size: var(--size-aHeader);
+    color: var(--color-aFooter);
+    letter-spacing: 1px;
+}
+
+footer span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span a
+{
+    padding: 10px;
+    margin: 5px;
+}
+
+footer span a i
+{
+    color: var(--color-icon);
+    padding: 0 5px;
+}
+
+footer h4
+{
+    color: var(--color-copy);
+}
+
+
+/* media 800px */
+
+@media (max-width: 800px)
+{
+
+    #services article
+    {
+        width: 80%;
+    }
+    header
+    {
+        display: none;
+    }
+
+    footer
+    {
+        display: none;
+    }
 }
 
