@@ -9,63 +9,80 @@
 {
 
     /* header */
-    --color-aHeader: #000;
-    --color-JX: black;
+    --color-aHeader: white;
+    --color-JX: white;
 
     --size-aHeader: 20px;
     --size-JX: 40px;
 
+    --background-header: white;
+
+
+    /* main */
+    --size-h1Main: 65px;
+    --size-pMain: 30px;
+
+/* background */
+
+--background-JX: rgb(207, 150, 60);
+--background-a: rgba(255, 255, 255, 0.836);
+--background-footer: rgb(23,25,24);
+
+/* footer */
+
+--color-icon: white;
+--color-copy: gray;
+--color-aFooter: white;
+
+
+
+/* font size */
+
+--size-h1: 60px;
+--size-h2: 30px;
+--size-h3: 22px;
+--size-p: 22px;
+--size-a: 20px;
 
 }
 
 
-/* header */
-
-header
+#workingProcess
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-
-    position: fixed;
-    transition: 0.7s;
-    
-    top: 0;
-    right: 0;
-    left: 0;
-
-    padding: 15px 20px;
+    padding: 20px;
 }
 
-header ul
+#workingProcess article
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 5px;
+    margin: 10px;
+
 }
 
-header ul li
+#workingProcess article div
 {
-    list-style: none;
-    margin: 0 5px;
-
-}
-
-header ul li a
-{
-    color: var(--color-aHeader);
-    font-size: var(--size-aHeader);
-    
-    padding: 20px;
-    text-decoration: none;
-    letter-spacing: 2px;
+    border: solid black 2px;
+    border-radius: 50%;
     
 }
 
-.JX a
+#workingProcess article div i
 {
-    font-size: var(--size-JX);
-    color: var(--color-JX);
-
-    text-decoration: none;
-
+    padding: 15px;
 }
+
+#workingProcess article h3
+{
+    padding: 5px;
+}
+
+
