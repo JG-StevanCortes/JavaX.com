@@ -8,32 +8,36 @@
 :root
 {
 
-    /* header */
-    --color-aHeader: white;
-    --color-JX: white;
+/* header */
+--color-aHeader: white;
+--color-JX: white;
 
-    --size-aHeader: 20px;
-    --size-JX: 40px;
+--size-aHeader: 20px;
+--size-JX: 40px;
 
-    --background-header: white;
+--background-header: white;
 
 
-    /* main */
-    --size-h1Main: 65px;
-    --size-pMain: 30px;
+/* main */
+--size-h1Main: 65px;
+--size-pMain: 30px;
 
-/* background */
+/* our working process */
 
---background-JX: rgb(207, 150, 60);
---background-a: rgba(255, 255, 255, 0.836);
---background-footer: rgb(23,25,24);
+--border-WorkingProcess: rgb(253, 163, 17);
+--color-iWorkingProcess: rgb(23,25,24);
 
 /* footer */
 
 --color-icon: white;
 --color-copy: gray;
 --color-aFooter: white;
+--background-footer: rgb(23,25,24);
 
+/* background */
+
+--background-JX: rgb(207, 150, 60);
+--background-a: rgba(255, 255, 255, 0.836);
 
 
 /* font size */
@@ -47,42 +51,54 @@
 }
 
 
-#workingProcess
+/* .workingProcess */
+#process
 {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    margin: 50px 0;
 }
 
-#workingProcess article
+.workingProcess
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.workingProcess article
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 
     padding: 5px;
     margin: 10px;
 
 }
 
-#workingProcess article div
+.workingProcess article div
 {
-    border: solid black 2px;
+    border: solid var(--border-WorkingProcess) 5px;
     border-radius: 50%;
     
 }
 
-#workingProcess article div i
+.workingProcess article div i
 {
-    padding: 15px;
+    padding: 20px;
+    color: var(--color-iWorkingProcess);
 }
 
-#workingProcess article h3
+.workingProcess article h3
 {
     padding: 5px;
+    font-size: var(--size-h3);
 }
 
 

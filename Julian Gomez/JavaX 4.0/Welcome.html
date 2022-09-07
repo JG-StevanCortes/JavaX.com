@@ -17,14 +17,12 @@
    <header>
         <ul>
             <li><a href="Welcome.html">Inicio</a></li>
-            <li><a href="Welcome.html#services">Servicios</a></li>
+            <li><a href="Welcome.html#ourServices">Servicios</a></li>
         </ul>
-        <nav class="JX">
-            <a href="#">JX</a>
-        </nav>
+        <div class="JavaX"><a href="Welcome.html"><h1>XJ</h1></a></div>
         <ul>
             <li><a href="Contact Us.html">Contáctanos</a></li>
-            <li><a href="#">Conócenos</a></li>
+            <li><a href="About Us.html">Conócenos</a></li>
         </ul>
     </header>
 
@@ -40,42 +38,84 @@
 
     <!-- services -->
 
-    <section id="services">
-        <article>
-            <span>
-                <i class="fa-solid fa-code fa-2x"></i>
-                <div>
-                    <h2>Programación</h2>
-                    <p>Es nuestro plato principal, ya que, nuestros empleados tienen un conocimiento técnico y objetivo sobre HTML, CSS y JavaScript, facilitando la personalización, creatividad y el diseño de nuestros clientes al momento de implementarlo en la web.</p>
-                </div>
-            </span>
-            <span>
-                <i class="fa-brands fa-css3 fa-2x"></i>
-                <div>
-                    <h2>Diseño Web</h2>
-                    <p>Nos especializamos en el diseños  grafico, interfaz y experiencia del usuario. Basándonos en la personalización del cliente recomendando una mejor optimización y diseños técnicos – objetivos.</p>
-                </div>
-            </span>
-        </article>
-        <article>
-            <span>
-                <i class="fa-solid fa-gears fa-2x"></i>
-                <div>
-                    <h2>Aplicaciones Web</h2>
-                    <p>Nos especializamos en la recolección y análisis de datos, esto para facilitar la experiencia e interacción del usuario , ahorrando tiempo y recursos comunicación entre usuario y servidor  de una forma personalizada y técnica.</p>
-                </div>
-            </span>
-            <span>
-                <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
-                <div>
-                    <h2>Mantenimiento Web</h2>
-                    <p>Nos enfocamos en corregir código, diseño, experiencia de usuario optima seguridad en base de datos y posicionamiento web o SEO.</p>
-                </div>
-            </span>
-        </article>
-    </section>
+    <div id="ourServices">
+
+        <h1>Nuestros Servicios</h1>
+        
+        <section class="services">
+
+            <article>
+                <span data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <i class="fa-solid fa-code fa-2x"></i>
+                    <div>
+                        <h2>Programación</h2>
+                        <p>Es nuestro plato principal, ya que, nuestros empleados tienen un conocimiento técnico y objetivo sobre HTML, CSS y JavaScript, facilitando la personalización, creatividad y el diseño de nuestros clientes al momento de implementarlo en la web.</p>
+                    </div>
+                </span>
+                <span data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-css3 fa-2x"></i>
+                    <div>
+                        <h2>Diseño Web</h2>
+                        <p>Nos especializamos en el diseños  grafico, interfaz y experiencia del usuario. Basándonos en la personalización del cliente recomendando una mejor optimización y diseños técnicos – objetivos.</p>
+                    </div>
+                </span>
+            </article>
+            <article>
+                <span data-aos="fade-left">
+                    <i class="fa-solid fa-gears fa-2x"></i>
+                    <div>
+                        <h2>Aplicaciones Web</h2>
+                        <p>Nos especializamos en la recolección y análisis de datos, esto para facilitar la experiencia e interacción del usuario , ahorrando tiempo y recursos comunicación entre usuario y servidor  de una forma personalizada y técnica.</p>
+                    </div>
+                </span>
+                <span data-aos="fade-left">
+                    <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+                    <div>
+                        <h2>Mantenimiento Web</h2>
+                        <p>Nos enfocamos en corregir código, diseño, experiencia de usuario optima seguridad en base de datos y posicionamiento web o SEO.</p>
+                    </div>
+                </span>
+            </article>
+        </section>
     
+    </div>
+
+        <!-- working process -->
+        
+        <section id="process">
+
+            <h1>Proceso de Trabajo</h1>
+            
+            <span class="workingProcess">
+            
+                <article data-aos="fade-right" data-aos-offset="20" data-aos-easing="ease-in-sine">
+                    <div><i class="fa-solid fa-ruler-combined fa-2x"></i></div>
+                    <h3>Planear</h3>
+                </article>
     
+                <hr width="100px" color="black" >
+                <article data-aos="fade-right" data-aos-offset="40" data-aos-easing="ease-in-sine">
+                    <div><i class="fa-solid fa-chart-line fa-2x"></i></div>
+                    <h3>Analizar</h3>
+                </article>
+    
+                <hr width="100px" color="black">
+                <article data-aos="fade-right" data-aos-offset="80" data-aos-easing="ease-in-sine">
+                    <div><i class="fa-solid fa-brush fa-2x"></i></div>
+                    <h3>Diseñar</h3>
+                </article>
+    
+                <hr width="100px" color="black">
+                <article data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div><i class="fa-solid fa-pen-ruler fa-2x"></i></div>
+                    <h3>Desarrollar</h3>
+                </article>
+            
+            </span>
+        
+        </section>
+    
+
 
     <!-- footer -->
 
@@ -115,7 +155,7 @@
         AOS.init(
             {
                 duration: 1000,
-                once: true
+                once: false,
             }
         );
       </script>

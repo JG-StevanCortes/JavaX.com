@@ -7,34 +7,60 @@
     <title>pruebas</title>
     <link rel="stylesheet" href="CSS/Pruebas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
 
     <!-- working process -->
+ 
+    <section id="process">
 
-    <section id="workingProcess">
-        <article>
-            <div><i class="fa-solid fa-ruler-combined fa-2x"></i></div>
-            <h3>Planear</h3>
-        </article>
-        <article>
-            <div><i class="fa-solid fa-chart-line"></i></div>
-            <h3>Analizar</h3>
-        </article>
-        <article>
-            <div><i class="fa-solid fa-brush"></i></div>
-            <h3>Diseñar</h3>
-        </article>
-        <article>
-            <div><i class="fa-solid fa-pen-ruler"></i></div>
-            <h3>Desarrollar</h3>
-        </article>
+        <h1>Proceso de Trabajo</h1>
         
+        <span class="workingProcess">
+        
+            <article data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div><i class="fa-solid fa-ruler-combined fa-2x"></i></div>
+                <h3>Planear</h3>
+            </article>
+
+            <hr width="100px" color="black" >
+            <article data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div><i class="fa-solid fa-chart-line fa-2x"></i></div>
+                <h3>Analizar</h3>
+            </article>
+
+            <hr width="100px" color="black">
+            <article data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div><i class="fa-solid fa-brush fa-2x"></i></div>
+                <h3>Diseñar</h3>
+            </article>
+
+            <hr width="100px" color="black">
+            <article data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div><i class="fa-solid fa-pen-ruler fa-2x"></i></div>
+                <h3>Desarrollar</h3>
+            </article>
+        
+        </span>
+    
     </section>
 
-
     <script src="JavaScript/prueba.js"></script>
+
+       <!-- Biblioteca Scroll A.O.S.-->
+
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+       <script>
+           AOS.init(
+               {
+                   duration: 1000,
+                   once: true,
+                }
+           );
+         </script>
     
 </body>
 </html>

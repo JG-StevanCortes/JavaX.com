@@ -53,7 +53,6 @@
 
 }
 
-
 /* header */
 
 /* down */
@@ -91,9 +90,6 @@ header
     font-family: Helvetica, sans-serif;
 }
 
-
-
-
 header ul
 {
     display: flex;
@@ -127,7 +123,6 @@ header ul li a
 
 }
 
-
 /* background */
 
 main
@@ -135,8 +130,8 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(Images/pexels-picjumbocom-196644.jpg);
+    height: 85vh;
+    background-image: url(Images/workTeam.jpg);
     background-position: center;
     background-size: cover;
     background-blend-mode: soft-light;
@@ -163,115 +158,127 @@ main article p
     font-size: var(--size-pMain);
 }
 
-/* services */
+/* what is */
 
-#ourServices
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin: 50px 0;
-}
-
-.services
+#whatIs
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 50px 0;
+    padding: 50px 20px;
 }
 
-.services article
+#whatIs article
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 45%;
-    padding: 0px 10px;
-    margin: 5px;
-}
-
-.services span
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
-
+    width: 45%;
 }
 
-.services span div
+.imgWhat img
+{
+    width: 55%;
+}
+
+.img2
+{
+    transform: translateY(-50px) translateX(100px);
+    width: 360px;
+}
+
+.textWhat h2, .textWhat p
 {
     padding: 8px;
-    margin: 0 10px;
 }
 
-.services span div h2, .services span div p
-{
-    padding: 5px;
-    text-align: justify;
-}
-
-.services span div h2
+.textWhat h2
 {
     font-size: var(--size-h2);
 }
-.services span div p
+.textWhat p
 {
     font-size: var(--size-p);
 }
 
-/* workingProcess */
-#process
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-}
+/* valors */
 
-.workingProcess
+#valors
 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
     padding: 20px;
-    width: 80%;
-    flex-wrap: wrap;
+    margin: 20px;
 }
 
-.workingProcess article
+#valors article
 {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+}
+
+.textValors
+{
+    width: 50%;
+
+}
+
+.textValors h2, .textValors p
+{
+    padding: 8px;
+    text-align: justify;
+}
+
+.textValors h2
+{
+    font-size: var(--size-h2);
+}
+
+.textValors p
+{
+    font-size: var(--size-p);
+}
+
+
+
+.listValors
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.listValors div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.listValors h2
+{
+    padding: 10px;
+}
+
+.listValors span
+{
+    display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 5px;
-    margin: 10px;
+    margin: 10px 20px;
+    width: 50%;
 
 }
-
-.workingProcess article div
-{
-    border: solid var(--border-WorkingProcess) 5px;
-    border-radius: 50%;
-    
-}
-
-.workingProcess article div i
+.listValors span i
 {
     padding: 20px;
-    color: var(--color-iWorkingProcess);
-}
+    margin: px;
+    border: solid var(--border-WorkingProcess) 5px;
+    border-radius: 50%;
 
-.workingProcess article h3
-{
-    padding: 5px;
-    font-size: var(--size-h3);
+
 }
 
 
