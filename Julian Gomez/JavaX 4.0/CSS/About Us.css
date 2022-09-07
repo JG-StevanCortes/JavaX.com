@@ -26,13 +26,17 @@
 
 /* background */
 
---background-JX: rgb(207, 150, 60);
+--background-JX: rgb(253, 163, 17);
 --background-a: rgba(255, 255, 255, 0.836);
 
 /* our working process */
 
 --border-WorkingProcess: rgb(253, 163, 17);
 --color-iWorkingProcess: rgb(23,25,24);
+
+/* Work team */
+
+--color-profile: rgb(253, 163, 17);
 
 /* footer */
 
@@ -281,7 +285,64 @@ main article p
 
 }
 
+/* work team */
 
+#workTeam
+{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 360px;
+    background-color: var(--color-profile);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    padding-bottom: 20px;
+    
+}
+
+.profile img
+{
+    width: 100%;
+    height: 250px;
+}
+
+.description
+{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    
+}
+
+.description h2, .description p, .description i
+{
+    text-align: justify;
+    padding: 8px;
+}
+
+.description h2
+{
+    font-size: var(--size-h2);
+    padding: 8px;
+
+}
+.description p
+{
+    font-size: var(--size-p);
+    padding: 8px 0;
+}
 
 /* footer */
 

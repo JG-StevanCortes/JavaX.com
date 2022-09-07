@@ -13,7 +13,7 @@
     --color-JX: white;
 
     --size-aHeader: 20px;
-    --size-JX: 40px;
+    --size-JX: 30px;
 
     --background-header: white;
 
@@ -24,7 +24,7 @@
 
 /* background */
 
---background-JX: rgb(207, 150, 60);
+--background-JX: rgb(253, 163, 17);
 --background-a: rgba(255, 255, 255, 0.836);
 --background-footer: rgb(23,25,24);
 
@@ -81,9 +81,6 @@ header
     padding: 15px 20px;
     font-family: Helvetica, sans-serif;
 }
-
-
-
 
 header ul
 {
@@ -248,6 +245,59 @@ main article p
 {
     width: 45%;
     margin: 10px;
+}
+
+
+/* discount */
+
+#discount
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    margin: 5px;
+}
+
+#discount h1
+{
+    font-size: var(--size-h1);
+}
+
+#discount article
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    
+}
+
+#discount article div
+{
+    padding: 10px;
+    margin: 5px;
+    width: 35%;
+}
+
+#discount article div h2, #discount article div p
+{
+    padding: 8px;
+}
+
+#discount article div h2
+{
+    font-size: var(--size-h2);
+    text-align: center;
+}
+
+#discount article div p
+{
+    font-size: var(--size-p);
+    text-align: justify;
 }
 
 /* footer */
