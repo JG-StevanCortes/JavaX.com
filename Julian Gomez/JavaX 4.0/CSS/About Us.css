@@ -344,6 +344,74 @@ main article p
     padding: 8px 0;
 }
 
+/* balance sheets */
+
+#balance
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#balance span
+{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#balance h1, #balance span
+{
+    padding: 10px;
+}
+
+#balance span article
+{
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    width: 40%;
+    background-color: var(--color-profile);
+    border-radius: 50px  40%;
+}
+
+#balance span article h2, #balance span article p, #balance span article a
+{
+    margin: 15px;
+    text-align: justify;
+}
+
+#balance span article div
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+#balance span article a
+{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+
+    width: 35%;
+    text-decoration: none;
+    background-color: var(--background-a);
+    color: var(--color-a);
+    border-radius: 20px;
+}
+
+#balance span article a h3, #balance span article a i
+{
+    padding: 5px;
+}
+
 /* footer */
 
 footer

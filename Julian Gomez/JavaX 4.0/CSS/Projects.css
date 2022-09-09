@@ -118,14 +118,24 @@ header ul li a
     
 }
 
-.JX a
+.JavaX
 {
-    font-size: var(--size-JX);
-    color: var(--color-JX);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--background-JX);
+    border-radius: 15%;
+}
 
-    text-decoration: none;
+.JavaX a
+{
+    color: var(--color-JX);   
+    text-decoration: none; 
+    font-size: var(--size-JX);
 
 }
+
 
 
 /* background */
@@ -135,8 +145,8 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(Images/pexels-picjumbocom-196644.jpg);
+    height: 70vh;
+    background-image: url(Images/projects.jpg);
     background-position: center;
     background-size: cover;
     background-blend-mode: soft-light;
@@ -163,222 +173,153 @@ main article p
     font-size: var(--size-pMain);
 }
 
-/* services */
+/* what is */
 
-#ourServices
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    margin: 50px 0;
-}
-
-#ourServices h1
-{
-    font-size: var(--size-h1);
-}
-
-.services
+#whatIs
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 50px 0;
+    padding: 30px 20px;
 }
 
-.services article
+#whatIs article
 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 45%;
-    padding: 0px 10px;
-    margin: 5px;
-}
-
-.services span
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
-
+    width: 45%;
 }
 
-.services span div
+.imgWhat img
 {
-    padding: 8px;
-    margin: 0 10px;
+    width: 55%;
 }
 
-.services span div h2, .services span div p
+.img2
 {
-    padding: 5px;
-    text-align: justify;
+    transform: translateY(-50px) translateX(100px);
+    width: 360px;
 }
 
-.services span div h2
-{
-    font-size: var(--size-h2);
-}
-.services span div p
-{
-    font-size: var(--size-p);
-}
-
-/* workingProcess */
-#process
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 0;
-}
-
-.workingProcess
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 80%;
-    flex-wrap: wrap;
-}
-
-.workingProcess article
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 5px;
-    margin: 10px;
-
-}
-
-.workingProcess article div
-{
-    border: solid var(--border-WorkingProcess) 5px;
-    border-radius: 50%;
-    
-}
-
-.workingProcess article div i
-{
-    padding: 20px;
-    color: var(--color-iWorkingProcess);
-}
-
-.workingProcess article h3
-{
-    padding: 5px;
-    font-size: var(--size-h3);
-}
-
-
-/* projects */
-
-#projects
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10px;
-    margin: 20px;
-}
-
-#projects h1
-{
-    font-size: var(--size-h1);
-    padding: 20px;
-}
-
-#projects article
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-#projects article div
-{
-    width: 50%;
-    padding: 20px;
-    background-color: var(--background-JX);
-    border-radius: 40px 30%;
-}
-
-#projects article div h3, #projects article div p, #projects article div span
+.textWhat h2, .textWhat p
 {
     padding: 8px;
 }
 
-#projects article div h2 a
+.textWhat h2
 {
     font-size: var(--size-h2);
-    text-decoration: none;
-    color: black;
-    letter-spacing: 1px;
 }
-
-#projects article div p
+.textWhat p
 {
     font-size: var(--size-p);
-    text-align: justify;
 }
 
-#projects article div span
+/* Mission and Vision */
+
+#missionAndVision
 {
-    display: flex;    
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#projects article div span a
+#missionAndVision article
 {
-    font-size: var(--size-a);
-    color: black;
-    margin: 10px;
-    padding: 10px 15px;
-    text-decoration: none;
-    
-    background-color: var(--background-a);
-    border-radius: 10px;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
 }
 
+#missionAndVision article img
+{
+    width: 35%;
+    padding: 10px;
+    border-radius: 30% 50px ;
+}
 
-
-#projects article span
+#missionAndVision article div
 {
     width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-#projects article span img
-{
-    width: 200px;
-    height: 130px;
+    padding: 10px;
     margin: 5px;
 }
 
-.img5
+#missionAndVision article div h2, #missionAndVision article div p
 {
-    position: absolute;
+    padding: 8px;
+}
+
+#missionAndVision article div h2
+{
+    font-size: var(--size-h2);
+    border-top: solid var(--background-JX) 5px;
+}
+
+#missionAndVision article div p
+{
+    font-size: var(--size-p);
+    text-align: justify;
+}
+
+/* objetives */
+
+#objectives
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+#objectives article
+{
+    width: 40%;
+}
+
+#objectives article h2, #objectives article p
+{
+    padding: 8px;
+}
+
+#objectives article h2
+{
+    font-size: var(--size-h2);
+    letter-spacing: 2px;
+    border-top: solid var(--background-JX) 5px;
 
 }
+
+#objectives article p
+{
+    font-size: var(--size-p);
+    text-align: justify;
+}
+
+#objectives div
+{
+    width: 45%;
+}
+
+#objectives div h2, #objectives div ul
+{
+    padding: 8px;
+}
+
+#objectives div h2
+{
+    font-size: var(--size-h2);
+}
+
+#objectives div ul li
+{
+    font-size: var(--size-p);
+    padding: 5px;
+    text-align: justify;
+}
+
 
 
 
@@ -479,26 +420,5 @@ footer span a i
 footer h4
 {
     color: var(--color-copy);
-}
-
-
-/* media 800px */
-
-@media (max-width: 800px)
-{
-
-    .services article
-    {
-        width: 80%;
-    }
-    header
-    {
-        display: none;
-    }
-
-    footer
-    {
-        display: none;
-    }
 }
 
